@@ -19,9 +19,13 @@
             </nav>
         </a>
     </header>
-    <audio autoplay>
-        <source src="runme.mp3">
-    </audio>
-    
+    <button onclick="runme()">DAME_CLICK</button>
+    <audio id ="random" src="runme.mp3"></audio>
+    <script>
+        function runme(){
+            var audio = document.getElementById("random");
+            audio.play();
+        }
+    </script>
 </body>
 </html>
